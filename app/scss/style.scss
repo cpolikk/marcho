@@ -24,22 +24,23 @@
 
     &__list-link {
         color: $title-color;
-        padding-bottom: 1px;
+        padding: 0 2px 1px;
         transition: all .3s;
-        @extend %quicksand-400;
+        @extend %roboto-400;
         text-transform: uppercase;
+
 
         &:hover {
             color: $accent-color;
             border-bottom: 1px solid $accent-color;
-            @extend %quicksand-500;
+            @extend %roboto-700;
         }
     }
 
     &__list-link--active {
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
-        @extend %quicksand-500;
+        @extend %roboto-700;
     }
 }
 
