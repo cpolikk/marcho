@@ -3,6 +3,10 @@ $default-color:#8d8d8d;
 $title-color:#29282d;
 $bg-color:#f6f6f6;
 
+%img {
+    background-repeat: no-repeat;
+
+}
 
 %quicksand-400 {
     font-family: 'Quicksand-Regular', sans-serif;
