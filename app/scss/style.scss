@@ -279,7 +279,7 @@
 
     &__inner {
         background-image: url(../images/decor/categories-bg-right.png);
-        @extend %img;
+        background-repeat: no-repeat;
         background-position: center right;
     }
 }
@@ -403,23 +403,53 @@
     }
 }
 
+.video-fashion {
+    background-color: $bg-color;
+    background-image: url(../images/decor/pattern.svg);
+    @extend %img;
+    background-position: top center;
+    padding: 125px 0;
 
+    &__inner {
+        display: flex;
+    }
 
+    &__popup {
+        margin-right: 60px;
+        height: 480px;
+        max-width: 530px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @extend %img;
 
+    }
 
+    &__content {
+        max-width: 570px
+    }
 
+    &__subtitle {
+        padding-top: 75px;
+        font-size: 22px;
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
 
+    &__title {
+        text-align: left;
+    }
 
+    &__text {
+        margin-bottom: 50px;
+    }
 
-
-
-
-
-
-
-
-
-
+    &__link {
+        @extend %btn;
+    }
+}
 
 
 @import 'media';
